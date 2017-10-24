@@ -12,7 +12,7 @@ https://api.instagram.com/v1/users/self/media/recent/?access_token=ACCESS-TOKEN
 			data: {access_token:token},
 			success: function(data) {
 				$.each(data, function(key, value) {
-					console.log(value.caption.text);
+					console.log(value);
 				});
 				
 			},
