@@ -9,7 +9,7 @@ https://api.instagram.com/v1/users/self/media/recent/?access_token=ACCESS-TOKEN
 			url: 'https://api.instagram.com/v1/users/self/',
 			type: 'GET',
 		    dataType: 'JSONP',
-			data: access_token:access_token,
+			data: {access_token:access_token},
 			success: function(data) {
 				console.log(data.caption.text);
 			},
