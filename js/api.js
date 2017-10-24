@@ -10,7 +10,7 @@ https://api.instagram.com/v1/users/self/media/recent/?access_token=ACCESS-TOKEN
 		$.ajax({
 			url: 'https://api.instagram.com/v1/users/self/media/recent/',
 			type: 'GET',
-			dataType: 'json',
+			dataType: 'JSONP',
 			data: data,
 			success: function(data) {
 				console.log(data.caption.text);
