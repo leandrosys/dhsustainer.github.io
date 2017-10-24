@@ -11,7 +11,10 @@ https://api.instagram.com/v1/users/self/media/recent/?access_token=ACCESS-TOKEN
 		    dataType: 'JSONP',
 			data: {access_token:token},
 			success: function(data) {
-				console.log(data);
+				$.each(data, function(key, value) {
+					console.log(value.caption.text);
+				});
+				
 			},
 			error: function(data){
 		        console.log(data);
